@@ -3,94 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>TPD NNOSDI | ระบบตรวจสอบพัสดุภาครัฐ</title>
-    <meta name="title" content="TPD NNOSDI | ระบบตรวจสอบพัสดุภาครัฐ">
-    <meta name="description" content="ระบบติดตามสถานะและตรวจสอบการส่งมอบพัสดุด้วยเทคโนโลยี Blockchain">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jackup2dd.github.io/TPD-B-Land/">
-    <meta property="og:title" content="TPD NNOSDI | ระบบตรวจสอบพัสดุภาครัฐ">
-    <meta property="og:description" content="ยกระดับความโปร่งใสการจัดซื้อจัดจ้างด้วย Smart Supply Chain">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200">
-
+    <title>TPD NNOSDI | Financial Tracking System</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Sarabun', sans-serif; background-color: #0f172a; color: white; }
-        .audit-line { position: absolute; left: 20px; top: 0; bottom: 0; width: 2px; background: #1e293b; }
+        body { font-family: Sarabun, sans-serif; background-color: #020617; color: white; }
     </style>
 </head>
-<body>
-    <div class="max-w-4xl mx-auto p-6">
-        <header class="text-center py-10 border-b border-cyan-900/50 mb-10">
-            <h1 class="text-3xl lg:text-4xl font-bold text-cyan-400 mb-3 tracking-tight">TPD NNOSDI Protocol</h1>
-            <p class="text-slate-400 text-lg">ระบบตรวจสอบสถานะและตรวจรับพัสดุภาครัฐ (e-Logistics Audit)</p>
-            <div class="mt-5 inline-flex items-center bg-slate-800/80 px-5 py-1.5 rounded-full border border-slate-700 text-xs font-medium text-green-400 shadow-inner">
-                <span class="w-2.5 h-2.5 bg-green-500 rounded-full mr-3 animate-pulse"></span> Network Status: Secured & Active
+<body class="p-4 md:p-8">
+    <div class="max-w-5xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4 border-b border-slate-800 pb-8">
+            <div>
+                <h1 class="text-3xl font-bold text-cyan-400 tracking-tight">TPD NNOSDI Protocol</h1>
+                <p class="text-slate-400">ระบบติดตามและเบิกจ่ายงบประมาณ (Smart Financial Audit)</p>
             </div>
-        </header>
-
-        <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 border border-slate-700 shadow-2xl mb-10 relative overflow-hidden">
-            <div class="absolute top-0 right-0 bg-cyan-600 px-5 py-1.5 rounded-bl-2xl text-[10px] font-bold tracking-widest uppercase">Verified</div>
-            <div class="flex flex-col md:flex-row gap-8 items-center">
-                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400" class="w-full md:w-56 h-56 object-cover rounded-2xl shadow-2xl border border-slate-600">
-                <div class="flex-1">
-                    <h2 class="text-2xl font-bold mb-5 text-white italic">📦 อุปกรณ์ส่งเสริมการเรียนรู้ดิจิทัล (Smart Device)</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
-                        <div class="space-y-1">
-                            <p class="text-slate-500 uppercase text-[10px] tracking-wider">รหัสติดตามพัสดุ</p>
-                            <p class="font-mono text-cyan-300 text-lg">TPD-2026-GOV-8894X</p>
-                        </div>
-                        <div class="space-y-1">
-                            <p class="text-slate-500 uppercase text-[10px] tracking-wider">หน่วยงานผู้อนุมัติ</p>
-                            <p class="text-white font-medium">สำนักงบประมาณ (Approved)</p>
-                        </div>
-                    </div>
-                    <div class="mt-8 p-4 bg-slate-950/80 rounded-xl border border-slate-800">
-                        <p class="text-[9px] text-slate-600 uppercase mb-1 tracking-widest">Smart Contract Hash (Immutable)</p>
-                        <p class="text-[10px] text-slate-400 font-mono break-all leading-relaxed">0x71C7656EC7ab88b098defB751B7401B5f6d8976F8b92d2e1f4</p>
-                    </div>
-                </div>
+            <div class="bg-slate-900 border border-slate-700 px-6 py-3 rounded-2xl shadow-xl">
+                <p class="text-[10px] text-slate-500 uppercase font-bold mb-1">หน่วยงานจัดจ้าง</p>
+                <p class="text-white font-bold">กรมส่งเสริมการปกครองท้องถิ่น (สถ.)</p>
             </div>
         </div>
 
-        <h3 class="text-xl font-bold text-white mb-8 ml-2">บันทึกประวัติการส่งมอบ (Audit Trail)</h3>
-        <div class="relative pl-12 space-y-12">
-            <div class="audit-line"></div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-slate-900/50 p-5 rounded-3xl border border-slate-800 shadow-inner">
+                <p class="text-[10px] text-slate-500 uppercase mb-2">มูลค่าโครงการรวม</p>
+                <p class="text-2xl font-bold text-white text-nowrap">125,000,000</p>
+                <p class="text-xs text-slate-400 mt-1 italic">THB (Fiscal Year 2026)</p>
+            </div>
+            <div class="bg-slate-900/50 p-5 rounded-3xl border border-slate-800 shadow-inner">
+                <p class="text-[10px] text-green-600 uppercase mb-2">ยอดที่เบิกไปแล้ว</p>
+                <p class="text-2xl font-bold text-green-400 text-nowrap">45,000,000</p>
+                <p class="text-xs text-green-900 mt-1 italic">36% of Total Contract</p>
+            </div>
+            <div class="bg-slate-900/50 p-5 rounded-3xl border border-slate-800 shadow-inner">
+                <p class="text-[10px] text-cyan-600 uppercase mb-2">ยอดที่เบิกได้ (งวดปัจจุบัน)</p>
+                <p class="text-2xl font-bold text-cyan-400 text-nowrap">15,500,000</p>
+                <p class="text-xs text-cyan-900 mt-1 italic">Milestone 2/4 Ready</p>
+            </div>
+            <div class="bg-slate-900/50 p-5 rounded-3xl border border-slate-800 shadow-inner">
+                <p class="text-[10px] text-yellow-600 uppercase mb-2">ยอดรวมของผู้รับจ้าง (สุทธิ)</p>
+                <p class="text-2xl font-bold text-yellow-400 text-nowrap">60,500,000</p>
+                <p class="text-xs text-yellow-900 mt-1 italic">Accrued Amount</p>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-slate-900 to-black rounded-3xl p-8 border border-slate-800 shadow-2xl mb-12">
+            <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+                <span class="text-cyan-500 text-2xl">⚡</span> รายละเอียดการขอเบิกงวดงาน
+            </h2>
             
-            <div class="relative">
-                <div class="absolute -left-12 w-6 h-6 bg-green-500 rounded-full border-4 border-slate-900 z-10 shadow-[0_0_15px_rgba(34,197,94,0.5)]"></div>
-                <div>
-                    <h4 class="text-green-400 font-bold text-lg">รายการถูกสร้างโดยสำนักงบประมาณ</h4>
-                    <p class="text-slate-400 text-sm">ตรวจสอบงบประมาณและอนุมัติจัดซื้อจัดจ้างสำเร็จ</p>
-                    <p class="text-[10px] text-slate-600 mt-1 font-mono">TIMESTAMP: 2026-02-10 09:30:12</p>
-                </div>
-            </div>
-
-            <div class="relative">
-                <div class="absolute -left-12 w-6 h-6 bg-cyan-500 rounded-full border-4 border-slate-900 z-10 animate-ping"></div>
-                <div class="bg-slate-800/40 p-8 rounded-3xl border border-cyan-900/30 shadow-inner">
-                    <h4 class="text-cyan-400 font-bold text-xl mb-3">รอการตรวจรับ ณ จุดปลายทาง</h4>
-                    <p class="text-slate-300 text-sm mb-6 leading-relaxed">พัสดุถึงพื้นที่เป้าหมายแล้ว กรุณาตรวจสอบความถูกต้องของสินค้าและยืนยันตัวตนด้วย Digital ID เพื่อจบกระบวนการเบิกจ่าย</p>
-                    <div class="flex items-center gap-3 text-xs text-slate-500 mb-6 bg-slate-900/50 p-3 rounded-lg w-fit">
-                        <span>🛡️ ผู้มีอำนาจตรวจรับ:</span>
-                        <span class="text-white font-bold">อ.นิธิโรจน์ สุวัชรธีรนิล</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="space-y-6">
+                    <div>
+                        <label class="text-[10px] text-slate-500 uppercase block mb-2 font-bold tracking-widest">เลือกสัดส่วนการขอเบิก (%)</label>
+                        <div class="flex gap-2">
+                            <button class="bg-slate-800 hover:bg-cyan-600 px-4 py-2 rounded-xl text-xs transition">10%</button>
+                            <button class="bg-slate-800 hover:bg-cyan-600 px-4 py-2 rounded-xl text-xs transition">25%</button>
+                            <button class="bg-cyan-700 px-4 py-2 rounded-xl text-xs transition border border-cyan-400 shadow-[0_0_10px_rgba(6,182,212,0.3)]">50%</button>
+                            <button class="bg-slate-800 hover:bg-cyan-600 px-4 py-2 rounded-xl text-xs transition">100%</button>
+                        </div>
                     </div>
-                    <button class="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 py-4 rounded-2xl font-bold text-lg shadow-xl transform transition hover:scale-[1.02] active:scale-95">
-                        ยืนยันการตรวจรับ (Sign with Digital ID)
+                    <div>
+                        <label class="text-[10px] text-slate-500 uppercase block mb-2 font-bold tracking-widest">ยอดที่ต้องการเบิก (ระบุจำนวนเงิน)</label>
+                        <input type="text" value="15,500,000" class="w-full bg-slate-950 border border-slate-700 p-4 rounded-2xl text-xl font-mono text-cyan-400 focus:outline-none focus:border-cyan-500 shadow-inner">
+                    </div>
+                </div>
+
+                <div class="bg-slate-950/50 p-6 rounded-3xl border border-slate-800">
+                    <h3 class="text-sm font-bold text-slate-400 mb-4 uppercase tracking-widest">ข้อมูลผู้ลงนามตรวจรับ</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+                            <span class="text-xs text-slate-500 italic">ประธานผู้ตรวจรับ:</span>
+                            <span class="text-sm font-bold">นิธิโรจน์ สุวัชรธีรนิล (Architect)</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+                            <span class="text-xs text-slate-500 italic">IC License:</span>
+                            <span class="text-sm font-mono text-slate-300">134685</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-slate-500 italic">สถานะผู้รับจ้าง:</span>
+                            <span class="text-xs font-bold text-green-500 bg-green-950/30 px-2 py-0.5 rounded border border-green-900/50">Active (Dynamic N .Co., Ltd)</span>
+                        </div>
+                    </div>
+                    <button class="w-full mt-6 bg-cyan-600 hover:bg-cyan-500 py-4 rounded-2xl font-bold shadow-lg shadow-cyan-900/20 transition-all active:scale-95 text-lg">
+                        อนุมัติการเบิกจ่าย (Authorize Payment)
                     </button>
-                    <p class="text-center text-[9px] text-slate-600 mt-4 uppercase tracking-tighter">การยืนยันจะบันทึกพิกัด GPS และเวลาจริงลงในบัญชีหนังหมาดิจิทัล</p>
                 </div>
             </div>
         </div>
 
-        <footer class="mt-20 py-8 text-center border-t border-slate-800/50">
-            <p class="text-slate-600 text-[10px] tracking-widest uppercase">
-                Secure Supply Chain Protocol by TPD NNOSDI & Dynamic N .Co., Ltd © 2026<br>
-                <span class="mt-1 block">CONFIDENTIAL BUSINESS INFORMATION - FOR DEMONSTRATION ONLY</span>
+        <footer class="mt-20 py-10 text-center border-t border-slate-900">
+            <p class="text-slate-500 text-[11px] tracking-[0.2em] uppercase mb-4">
+                Secure Supply Chain Protocol by TPD NNOSDI & Dynamic N .Co., Ltd
             </p>
+            <div class="text-slate-400 text-xs space-y-1">
+                <p>© 2026 ลิขสิทธิ์โดย <strong>นิธิโรจน์ สุวัชรธีรนิล</strong>. สงวนลิขสิทธิ์ตามกฎหมาย</p>
+                <p>Copyright 2026 by <strong>Nithirote Suwatthiranin</strong>. All Rights Reserved.</p>
+            </div>
+            <div class="mt-6 inline-block px-4 py-1 bg-slate-900 rounded-full border border-slate-800 text-[9px] text-slate-600 uppercase tracking-widest">
+                Confidential Business Information - Proprietary Protocol
+            </div>
         </footer>
     </div>
 </body>
 </html>
-
